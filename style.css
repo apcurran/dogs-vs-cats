@@ -1,0 +1,69 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    line-height: 1.65;
+    scroll-behavior: smooth;
+}
+
+h1 {
+    line-height: 1.2;
+    font-size: calc(.5rem + 7.25vmin);
+    font-weight: 400;
+}
+
+.article-body {
+    display: grid;
+    grid-template-columns: 1fr minmax(380px, 750px) 1fr;
+    grid-gap: 1rem;
+    margin-bottom: 4em;
+}
+
+.hero {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    filter: brightness(.6);
+}
+
+.title {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    z-index: 1;
+    align-self: center;
+    justify-self: center;
+    
+    color: #fff;
+}
+
+p {
+    margin: 1em;
+    grid-column: 2 / 3;
+
+    font-family: sans-serif;
+}
+
+p.intro {
+    font-size: 1.4rem;
+    line-height: 1.4;
+}
+
+p.beginning::first-line {
+    font-size: 1.1rem;
+}
+
+img {
+    grid-column: 2 /3;
+    width: 100%;
+}
+
+img.tall {
+    width: 50%;
+    float: left;
+    margin-top: 1em;
+    margin-right: 1em;
+}
