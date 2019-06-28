@@ -19,7 +19,7 @@ h1 {
 
 .article-body {
     display: grid;
-    grid-template-columns: 1fr minmax(380px, 750px) 1fr;
+    grid-template-columns: 1fr minmax(315px, 750px) 1fr;
     grid-gap: 1rem;
     margin-bottom: 4em;
 }
@@ -64,6 +64,5 @@ img {
 img.tall {
     width: 60%;
     float: left;
-    margin-top: 1em;
-    margin-right: 1em;
+    margin: 1em 1em 1em 0;
 }
